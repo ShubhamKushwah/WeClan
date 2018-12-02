@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.syberkeep.weclan.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/image_avatar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/text_user_full_name_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_avatar_profile"
+        android:padding="10dp"
+        android:text="Unnamed"
+        android:textColor="@color/black_one"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/friends_title_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_full_name_profile"
+        android:paddingBottom="8dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:text="Friends: "
+        android:textColor="@color/grey_800"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/friends_count_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_full_name_profile"
+        android:layout_toEndOf="@id/friends_title_profile"
+        android:paddingBottom="8dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="8dp"
+        android:text="000"
+        android:textColor="@color/grey_800"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/followers_title_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_full_name_profile"
+        android:layout_toEndOf="@id/friends_count_profile"
+        android:paddingBottom="8dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:text="Followers: "
+        android:textColor="@color/grey_800"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/followers_count_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_full_name_profile"
+        android:layout_toEndOf="@id/followers_title_profile"
+        android:paddingBottom="8dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="8dp"
+        android:text="000"
+        android:textColor="@color/grey_800"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/status_title_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friends_title_profile"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Status"
+        android:textColor="@color/grey_500"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_user_status_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_title_profile"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="This is the user's status"
+        android:textColor="@color/grey_800"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_friend_request_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_status_profile"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/cyan"
+        android:text="Send Friend Request"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_follow_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_status_profile"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@id/btn_friend_request_profile"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Follow"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_block_profile"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_status_profile"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@id/btn_follow_profile"
+        android:text="Block"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

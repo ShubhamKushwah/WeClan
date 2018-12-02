@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.syberkeep.weclan.AccountActivity">
+
+    <include
+        android:id="@+id/toolbar_accounts_activity"
+        layout="@layout/toolbar_layout_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/toolbar_accounts_activity"
+        android:background="@color/colorPrimaryDark" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_avatar_account"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar_accounts_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/ic_launcher_round" />
+    
+    <EditText
+        android:id="@+id/edittext_fullname_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@id/image_avatar_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent"
+        android:fontFamily="monospace"
+        android:maxLength="19"
+        android:text="Unnamed"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_change_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:saveEnabled="false"
+        android:layout_below="@id/image_avatar_account"
+        android:layout_toEndOf="@id/edittext_fullname_account"
+        android:src="@drawable/ic_done_black_24dp"
+        android:tint="@color/white"
+        app:fabSize="mini" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_change_avatar_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/toolbar_accounts_activity"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/ic_file_upload_black_24dp"
+        android:text="Change Avatar"
+        android:tint="@color/white" />
+
+    <EditText
+        android:id="@+id/status_edittext_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:maxLength="50"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="Status here..."
+        android:textAlignment="center"
+        android:textColor="@color/grey_300"
+        android:textSize="20sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_change_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/status_edittext_account"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_done_black_24dp"
+        android:text="Save Status"
+        android:tint="@color/white"
+        app:fabSize="mini" />
+
+</RelativeLayout>

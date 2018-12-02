@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "129787761746",
+    "firebase_url": "https://weclan-3cff4.firebaseio.com",
+    "project_id": "weclan-3cff4",
+    "storage_bucket": "weclan-3cff4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129787761746:android:623fbcded5efd622",
+        "android_client_info": {
+          "package_name": "com.syberkeep.weclan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129787761746-pb40sfbrgru6293g5bmq3ne9lvv8tse9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syberkeep.weclan",
+            "certificate_hash": "1b0a21933192e0d643beb8d3bd6f2290763913f8"
+          }
+        },
+        {
+          "client_id": "129787761746-mi5h13381qrtp54rlpgmlt4c2rt99qcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKvFFgT7D8-t1CmdppogdKJ76CBb9JOqk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129787761746-mi5h13381qrtp54rlpgmlt4c2rt99qcu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeClan</string>
+    <string name="email">Email</string>
+    <string name="password_in">Password</string>
+    <string name="login_in">Log In</string>
+    <string name="full_name">Full Name</string>
+    <string name="password_up">Password</string>
+    <string name="create_account_up">Create account</string>
+    <string name="password_again">Password again</string>
+    <string name="log_out">Log out</string>
+</resources>
